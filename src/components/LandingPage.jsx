@@ -20,8 +20,7 @@ function LandingPage() {
             ))}
             <div className='start flex items-center gap-5'>
                 <div className='px-5 py-2  font-light text-md border-[2px] border-zinc-500 rounded-full capitalize'>Donate to us</div>
-                <div className='w-10 h-10 flex items-center justify-center rounded-full border-[2px] border-zinc-500'> <span className='rotate-[45deg]'><FaArrowUpLong /></span>
-                </div>
+                
             </div>
         </div>
     </div>
