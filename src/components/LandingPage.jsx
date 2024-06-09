@@ -3,7 +3,7 @@ import React from 'react'
 function LandingPage() {
   return (
     <div className='w-full  bg-zinc-900 pt-1'>
-        <div className='textstructure mt-52 px-20'>
+        <div className='textstructure mt-10 px-20'>
             {["FOR THE","PEOPLE OF","BANGLADESH"].map((item,index)=> 
             <div className='masker'>
                 <div className='w-fit flex items-center'>
