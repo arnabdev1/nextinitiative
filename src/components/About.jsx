@@ -20,16 +20,16 @@ function About() {
               </button>
             </div>
             <div className='flex'>
-              <img className='w-1/2' src="../../public/arnab.jpg"/>
-              <img className='w-1/2' src="../../public/sheo.jpg"/>
+              <img className='w-1/2' src="arnab.jpg"/>
+              <img className='w-1/2' src="sheo.jpg"/>
             </div>
             <div className='flex'>
-              <img className='w-1/2' src="../../public/shirsho.jpg"/>
-              <img className='w-1/2' src="../../public/labib.jpg"/>
+              <img className='w-1/2' src="shirsho.jpg"/>
+              <img className='w-1/2' src="labib.jpg"/>
             </div>
             <div className='flex'>
-              <img className='w-1/2' src="../../public/joy.jpg"/>
-              <img className='w-1/2' src="../../public/abrar.jpg"/>
+              <img className='w-1/2' src="joy.jpg"/>
+              <img className='w-1/2' src="abrar.jpg"/>
             </div>
         </div>
         
