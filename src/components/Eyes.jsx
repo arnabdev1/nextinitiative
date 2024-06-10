@@ -16,7 +16,7 @@ function Eyes() {
   })
   return (
     <div className='w-full bg-[#000000]'>
-        <div className='relative w-full h-full]'>
+        <div data-scroll data-scroll-section data-scroll-speed=".4" className='relative w-full h-full]'>
             <img  className='rounded-t-3xl'src="nif_group.jpg" alt="React Image" />
             <img  className='rounded-b-3xl' src="nif_group2.jpg" alt="React Image" />
             <div className='flex gap-10 items-center justify-center '>                
