@@ -6,7 +6,9 @@ import About from './components/About'
 import Eyes from './components/Eyes'
 import Events from './components/Events'
 import Partners from './components/Partners'
+
 import LocomotiveScroll from 'locomotive-scroll';
+import Anniv from './components/Anniv'
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
       <Navbar/>
       <LandingPage/>
       <About/>
+      <Anniv/>
       <Eyes/>
       <Events/>
       <Marquee/>
