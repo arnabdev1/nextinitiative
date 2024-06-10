@@ -12,12 +12,15 @@ function About() {
           </h1> 
           <div className='px-10 pt-20  flex flex-wrap w-full gap-5  border-t-[1px] mt-10 border-[#b5627e] bg-black rounded-t-[20px]'>
               <div className='w-full'>
-                <h1 className='text-5xl font-["Neue_Montreal"] font-bold tracking-tight text-white'>Our Team:</h1>
-                <a href="https://forms.gle/uKMd3XEuauNv2vJDA" target="_blank"><button className='flex gap-10 items-center px-10 py-6 mt-10 bg-[#CDEA68] font-bold rounded-full '>
+                <h1 className='text-5xl font-["Neue_Montreal"] font-bold tracking-tight text-white'>
+                  Our Team:
+                </h1>
+                <a href="https://forms.gle/uKMd3XEuauNv2vJDA" target="_blank">
+                  <button className='flex text-s gap-3 items-center px-3 py-2 mt-5 bg-[#CDEA68] rounded-full font-["Neue_Montreal"]'>
                     Join now
-                    <div className='w-3 h-3 rounded-full bg-zinc-900'>
-                    </div>
-                </button></a>
+                    <div className='w-2 h-2 rounded-full bg-zinc-900'></div>
+                  </button>
+                </a>
               </div>
               <div className='flex flex-col md:flex-row justify-center items-center'>
                 <img className='w-[650px] ' src="arnab.jpg"/>
