@@ -13,7 +13,7 @@ function App() {
       <Navbar/>
       <LandingPage/>
       <Marquee/>
-      
+      <About/>
       <Eyes/>
       <Events/>
       <Partners/>
