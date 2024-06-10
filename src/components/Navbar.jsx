@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <div  className='bg-zinc-900 gap-10 container mx-auto px-20 py-8 font-["Neue_Montreal"] flex justify-between items-center' >
         <div className='logo'>
-            <img width="400" height="200" fill="none" src="../../public/logo3.webp"/>
+            <img width="400" height="200" fill="none" src="logo3.webp"/>
 									
         </div>
         <div className=' flex gap-10 flex-wrap'>
