@@ -1,15 +1,21 @@
 import React from 'react'
-
+import { motion } from 'framer-motion'
 function About() {
   return (
     <div className='bg-[#004D43]'>
       <div className='team w-full   bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl text-black '>
-          <h1 className='px-10 pt-10 text-bold font-["Neue_Montreal"] text-[5vw] leading-[4.5vw] tracking-tighter '>
-              Non-profit Organisaiton | Run by students 
-          </h1>
-          <h1 className='px-10 font-["Neue_Montreal"] text-[3vw] leading-[4.5vw] tracking-tighter '>    
-              Donate to us and help us feed another hungry soul
-          </h1> 
+          <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1 }}>  
+            <h1 className='px-10 pt-10 text-bold font-["Neue_Montreal"] text-[5vw] leading-[4.5vw] tracking-tighter '>
+                Non-profit Organisaiton | Run by students 
+            </h1>
+            <h1 className='px-10 font-["Neue_Montreal"] text-[3vw] leading-[4.5vw] tracking-tighter '>    
+                Donate to us and help us feed another hungry soul
+            </h1> 
+          </motion.div>
           <div className='px-10 pt-20  flex flex-wrap w-full gap-5  border-t-[1px] mt-10 border-[#b5627e] bg-black rounded-t-[20px]'>
               <div className='w-full'>
                 <h1 className='text-5xl font-["Neue_Montreal"] font-bold tracking-tight text-white'>
