@@ -20,7 +20,7 @@ function LandingPage() {
             {/* {["Educational Events","Food drives and tree plantations"].map((item,index)=> 
             (<p className='text-md font-light tracking-tight leading-none'>{item}</p>
             ))} */}
-            <motion.div initial={{ width :0 }} animate={{ width : "100%" }} transition={{ease:[0.76,0,0.24,1],duration:[0.5]}}  className='w-full  flex justify-center items-center align-middle gap-5'>
+            <motion.div initial={{ width :0 }} animate={{ width : "100%" }} transition={{ease:[0.76,0,0.24,1],duration:[3]}}  className='w-full  flex justify-center items-center align-middle gap-5'>
                 <a href="https://www.instagram.com/nextinitiative1/" target="_blank">
                     <img src='ig.png' className='w-[100px] font-light text-md  rounded-full capitalize"'/>
                 </a>
