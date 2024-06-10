@@ -5,7 +5,7 @@ function Navbar() {
     window.open(website, '_blank');
   };
   return (
-    <div  className='bg-zinc-900 gap-10 container mx-auto px-20 py-8 font-["Neue_Montreal"] flex justify-between items-center' >
+    <div  className='bg-black gap-10 container mx-auto px-20 py-8 font-["Neue_Montreal"] flex justify-between items-center' >
         <div className='logo'>
             <img width="400" height="200" fill="none" src="logo3.webp"/>
 									

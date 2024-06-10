@@ -2,12 +2,12 @@ import React from 'react'
 
 function Partners() {
   return (
-    <div className='partners'>
+    <div className='partners bg-black'>
         <div className='align-center items-center justify-center flex w-full px-10 py-10'>
             <h1 className='text-5xl font-["Neue_Montreal"] font-bold tracking-tight'>Our Partners</h1>    
         </div> 
 
-        <div className='w-full h-[300px] px-10 bg-zinc-900 gap-10 flex  flex-col md:flex-row align-middle items-center'>
+        <div className='w-full h-[300px] px-10 gap-10 flex  flex-col md:flex-row align-middle items-center'>
                 <div className='cardcontainer'>
                     <img className='card w-[900px] rounded-xl   bg-zinc-100' src="jbl.png"/>  
                 </div>
@@ -17,7 +17,7 @@ function Partners() {
                 </div>
         </div>
 
-        <div className='align-center items-center justify-center flex w-full px-10 py-10'>
+        <div className='align-center rounded-t-3xl bg-zinc-900 items-center justify-center flex w-full px-10 py-10'>
             <h1 className='text-l font-["Neue_Montreal"] font-bold tracking-tight'>Designed and Developed by Arnab Dev </h1>    
         </div> 
     </div>

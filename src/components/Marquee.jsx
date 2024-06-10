@@ -3,7 +3,7 @@ import React from 'react'
 
 function Marquee() {
   return (
-    <div className='overflow-hidden w-full py-20 rounded-3xl rounded-tr-3xl bg-[#004D43]'>
+    <div className='overflow-hidden w-full py-20 rounded-t-3xl rounded-tr-3xl bg-[#004D43]'>
         <div className='text flex border-t-2 border-b-2 border-zinc-300 whitespace-nowrap'>
             <motion.h1 initial={{ x:0 }} animate={{ x:"-100%" }} transition={{ ease:"linear",repeat:Infinity, duration:5}} 
             className='text-[24vw] leading-none font-["Founders Grotesk"] font-semibold uppercase p-5'> NEXT INITIATIVE FOUNDATION</motion.h1>

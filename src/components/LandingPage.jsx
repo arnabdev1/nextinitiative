@@ -3,12 +3,12 @@ import React from 'react'
 function LandingPage() {
   return (
     <div className='w-full '>
-        <div className='textstructure px-20  pb-5 pt-10 bg-zinc-900'>
+        <div className='textstructure px-10  pb-5 pt-10 bg-black'>
             {["FOR THE","PEOPLE OF","BANGLADESH"].map((item,index)=> 
             <div className='masker'>
                 <div className='w-fit flex items-center'>
-                    {index==1 && (<img className='rounded-[15px] w-[11vw] h-[6vw] bg-red-500' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/2560px-Flag_of_Bangladesh.svg.png'/>)}
-                    <h1 className="uppercase text-[10vw] flex items-center leading-[.75] h-full tracking-tight font-medium font-['Founders Grotesk']">
+                    {index==1 && (<img className='rounded-[5px] w-[12vw] h-[8vw] bg-red-500' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/2560px-Flag_of_Bangladesh.svg.png'/>)}
+                    <h1 className="uppercase text-[13vw] flex items-center leading-[.75] h-full tracking-tight font-medium font-['Founders Grotesk']">
                         {item}
                     </h1>
                 </div>

@@ -15,10 +15,10 @@ function Eyes() {
     })
   })
   return (
-    <div className='w-full bg-[#CDEA68]'>
+    <div className='w-full bg-[#000000]'>
         <div className='relative w-full h-full]'>
             <img  className='rounded-t-3xl'src="nif_group.jpg" alt="React Image" />
-            <img  src="nif_group2.jpg" alt="React Image" />
+            <img  className='rounded-b-3xl' src="nif_group2.jpg" alt="React Image" />
             <div className='flex gap-10 items-center justify-center '>                
                 
                 <div className=' absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] flex space-x-5'>
