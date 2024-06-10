@@ -2,25 +2,26 @@ import React from 'react'
 
 function LandingPage() {
   return (
-    <div className='w-full  bg-zinc-900 pt-1'>
-        <div className='textstructure mt-10 px-20'>
+    <div className='w-full '>
+        <div className='textstructure px-20  pb-5 pt-10 bg-zinc-900'>
             {["FOR THE","PEOPLE OF","BANGLADESH"].map((item,index)=> 
             <div className='masker'>
                 <div className='w-fit flex items-center'>
-                    {index==1 && (<img className='rounded-md w-[11vw] h-[6vw] bg-red-500' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/2560px-Flag_of_Bangladesh.svg.png'/>)}
-                    <h1 className="uppercase text-[9vw] flex items-center leading-[.75] h-full tracking-tight font-medium font-['Founders Grotesk']">
+                    {index==1 && (<img className='rounded-[15px] w-[11vw] h-[6vw] bg-red-500' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/2560px-Flag_of_Bangladesh.svg.png'/>)}
+                    <h1 className="uppercase text-[10vw] flex items-center leading-[.75] h-full tracking-tight font-medium font-['Founders Grotesk']">
                         {item}
                     </h1>
                 </div>
             </div>)}
         </div>  
-        <div className='border-t-[1px] border-zinc-32 mt-32 flex justify-between items-center py-5 px-20'>
-            {["Educational Events","Food drives and tree plantations"].map((item,index)=> 
+        <div className=' bg-zinc-10 border-t-[1px]  rounded-3xl flex justify-center items-center py-5 px-20 text-black'>
+            {/* {["Educational Events","Food drives and tree plantations"].map((item,index)=> 
             (<p className='text-md font-light tracking-tight leading-none'>{item}</p>
-            ))}
-            <div className='start flex items-center gap-5'>
-                <div className='px-5 py-2  font-light text-md border-[2px] border-zinc-500 rounded-full capitalize'>Donate to us</div>
-                
+            ))} */}
+            <div className='w-full  flex justify-center items-center align-middle gap-5'>
+                <a href="https://www.instagram.com/nextinitiative1/" target="_blank"><img src='ig.png' className='w-[100px] font-light text-md  rounded-full capitalize"'/></a>
+                <a href="https://www.facebook.com/nextinitiativebd" target="_blank"><img src='fb.png' className='w-[100px] font-light text-md  rounded-full capitalize'/></a>
+                <a href="https://www.linkedin.com/company/nextinitiative" target="_blank"><img src='in.png' className='w-[100px] font-light text-md  rounded-full capitalize'/></a>
             </div>
         </div>
     </div>
