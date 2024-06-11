@@ -17,9 +17,6 @@ function Partners() {
                 </div>
         </div>
 
-        <div className='align-center rounded-t-3xl bg-zinc-900 items-center justify-center flex w-full px-10 py-10'>
-            <h1 className='text-l font-["Neue_Montreal"] font-bold tracking-tight'>Designed and Developed by Arnab Dev </h1>    
-        </div> 
     </div>
   )
 }

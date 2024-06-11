@@ -2,7 +2,7 @@ import React from 'react'
 
 function Events() {
   return (
-    <div className='events w-full pt-10'>
+    <div id="events" className='events w-full pt-10'>
         <div className='align-center items-center justify-center flex w-full px-10'>
             <h1 className='text-5xl font-["Neue_Montreal"] font-bold tracking-tight'>Our Events</h1>    
         </div> 

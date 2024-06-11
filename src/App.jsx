@@ -9,6 +9,7 @@ import Partners from './components/Partners'
 
 import LocomotiveScroll from 'locomotive-scroll';
 import Anniv from './components/Anniv'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Events/>
       <Marquee/>
       <Partners/>
+      <Footer/>
     </div>
   )
 }
