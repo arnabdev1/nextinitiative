@@ -17,35 +17,36 @@ function Navbar() {
     window.open(website, '_blank');
   };
   return (
-    <div className='bg-black  container mx-auto px-20 py-8 font-["Neue_Montreal"] flex justify-between items-center'>
+    <div className='bg-black flex flex-row px-5 container mx-auto  py-8 font-["Neue_Montreal"] justify-evenly items-center'>
       <div className="logo">
-        <img width="400" height="200" fill="none" src="logo3.webp" />
+        <img width="200" height="100" fill="none" src="logo3.webp" />
       </div>
+      <div>
+        <div className=" flex lg:flex-row md:flex-col sm:flex-col flex-col gap-10 flex-wrap items-center">
+          <button
+            onClick={(e) => scrollToDiv("about")}
+            className="text-lg font-light"
+          >
+            About Us
+          </button>
 
-      <div className=" flex gap-10 flex-wrap">
-        <button
-          onClick={(e) => scrollToDiv("about")}
-          className="text-lg font-light"
-        >
-          About Us
-        </button>
+          <button
+            onClick={(e) => scrollToDiv("events")}
+            className="text-lg font-light"
+          >
+            Our Work
+          </button>
 
-        <button
-          onClick={(e) => scrollToDiv("events")}
-          className="text-lg font-light"
-        >
-          Our Work
-        </button>
-
-        <a href="https://forms.gle/uKMd3XEuauNv2vJDA" target="_blank">
-          <button className="text-lg font-light">Join us</button>
-        </a>
-        <button
-          onClick={(e) => scrollToDiv("contact")}
-          className="text-lg font-light"
-        >
-          Contact
-        </button>
+          <a href="https://forms.gle/uKMd3XEuauNv2vJDA" target="_blank">
+            <button className="text-lg font-light">Join us</button>
+          </a>
+          <button
+            onClick={(e) => scrollToDiv("contact")}
+            className="text-lg font-light"
+          >
+            Contact
+          </button>
+        </div>
       </div>
     </div>
   );
