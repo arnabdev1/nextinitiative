@@ -30,7 +30,7 @@ function About() {
             </a>
           </div>
           <div className="flex flex-col md:flex-row justify-center items-center">
-            <img className="w-[650px] " src="arnab.jpg" />
+            <img className="w-[650px] " src="arnab.png" />
             <img className="w-[650px]" src="sheo.jpg" />
           </div>
           <div className="flex flex-col md:flex-row justify-center items-center">
