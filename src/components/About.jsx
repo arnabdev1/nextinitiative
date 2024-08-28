@@ -17,14 +17,14 @@ function About() {
             Donate to us and help us feed another hungry soul
           </h1>
         </motion.div>
-        <div className="px-10 pt-20  flex flex-wrap w-full gap-5 justify-center items-center  border-t-[1px] mt-10 border-[#b5627e] bg-black rounded-t-[20px]">
-          <div className="w-full">
-            <h1 className='text-5xl font-["Neue_Montreal"] font-bold tracking-tight text-white'>
+        <div className=" pt-20  flex flex-wrap w-full gap-5 justify-center items-center  border-t-[1px] mt-10 border-[#b5627e] bg-black rounded-t-[20px]">
+          <div className="w-full px-2 md:px-10">
+            <h1 className='xl:text-[4vw] text-3xl font-["Neue_Montreal"] font-bold tracking-tight text-white'>
               Our Team:
             </h1>
             <a href="https://forms.gle/uKMd3XEuauNv2vJDA" target="_blank">
               <button
-                className='flex text-s gap-3 items-center px-3 py-2 mt-5 bg-[#CDEA68] rounded-full font-["Neue_Montreal"]
+                className='xl:text-[1vw] text-md flex text-s gap-3 items-center px-5 py-2 mt-5 bg-[#CDEA68] rounded-full font-["Neue_Montreal"]
                text-black transition-all duration-300 hover:text-xl  hover:bg-[#000000] hover:text-white hover:ring hover:ring-[#ffffff] active:bg-[#CDEA68] focus:outline-none focus:text-black active:text-black focus:ring focus:ring-[#ffffff]'
               >
                 Join now
@@ -34,16 +34,19 @@ function About() {
           </div>
 
           <div className="flex lg:flex-row md:flex-col sm:flex-col flex-col justify-center items-center">
-            <img className="lg:w-[50vw] md:w-full sm:w-full " src="arnab.png" />
-            <img className="lg:w-[50vw] md:w-full sm:w-full " src="sheo.jpg" />
+            <img className="lg:w-[48vw] md:w-full sm:w-full " src="arnab.png" />
+            <img className="lg:w-[48vw] md:w-full sm:w-full " src="sheo.jpg" />
           </div>
           <div className="flex lg:flex-row md:flex-col sm:flex-col flex-col justify-center items-center">
-            <img className="lg:w-[50vw] md:w-full sm:w-full " src="shirsho.jpg" />
-            <img className="lg:w-[50vw] md:w-full sm:w-full " src="labib.jpg" />
+            <img
+              className="lg:w-[48vw] md:w-full sm:w-full "
+              src="shirsho.jpg"
+            />
+            <img className="lg:w-[48vw] md:w-full sm:w-full " src="labib.jpg" />
           </div>
           <div className="flex lg:flex-row md:flex-col sm:flex-col flex-col justify-center items-center">
-            <img className="lg:w-[50vw] md:w-full sm:w-full " src="joy.jpg" />
-            <img className="lg:w-[50vw] md:w-full sm:w-full " src="abrar.jpg" />
+            <img className="lg:w-[48vw] md:w-full sm:w-full " src="joy.jpg" />
+            <img className="lg:w-[48vw] md:w-full sm:w-full " src="abrar.jpg" />
           </div>
         </div>
       </div>

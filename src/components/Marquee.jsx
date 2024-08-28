@@ -26,20 +26,21 @@ function Marquee() {
       data-scroll-speed=".4"
       className="overflow-hidden w-full py-10 rounded-3xl bg-[#7a180f]"
     >
-      <div className="text h-[400px] flex  whitespace-nowrap justify-center items-center">
+      <div className="text h-auto flex  whitespace-nowrap justify-center items-center">
         <div
           style={{ position: "relative", width: "100%", height: "100%" }}
-          className="justify-center items-center flex"
+          className="justify-center items-center flex h-[50px]"
         >
           <motion.img
             key={images[currentImage]}
             src={images[currentImage]}
             alt={`Image ${currentImage}`}
-            style={{ height: "400px", objectFit: "cover" }}
+            style={{ objectFit: "cover" }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
+            className="lg:h-[600px] md:h-[400px] h-[200px]"
           />
         </div>
 
