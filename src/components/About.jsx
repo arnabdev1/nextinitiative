@@ -1,56 +1,67 @@
-import React from "react";
 import { motion } from "framer-motion";
+
 function About() {
   return (
-    <div id="about" className="bg-[#000000]">
-      <div className="team w-full   bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl text-black ">
+    <section id="about" className="py-32 px-6">
+      <div className="max-w-7xl mx-auto">
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-20"
         >
-          <h1 className='px-10 pt-10 text-bold font-["Neue_Montreal"] text-[5vw] leading-[4.5vw] tracking-tighter '>
-            Non-profit Organisaiton | Run by students
-          </h1>
-          <h1 className='px-10 font-["Neue_Montreal"] text-[3vw] leading-[4.5vw] tracking-tighter '>
-            Donate to us and help us feed another hungry soul
-          </h1>
+          <h2 className='text-4xl md:text-6xl font-bold font-["Neue_Montreal"] text-white mb-6'>
+            Who We Are
+          </h2>
+          <div className="w-20 h-1 bg-[#CDEA68] mx-auto mb-8" />
+          <p className='text-lg md:text-xl text-white/70 font-["Neue_Montreal"] max-w-3xl mx-auto leading-relaxed'>
+            Next Initiative Foundation is a student-driven non-profit organization 
+            committed to making a tangible difference in our community through food drives, 
+            educational programs, and sustainable development initiatives.
+          </p>
         </motion.div>
-        <div className=" pt-20  flex flex-wrap w-full gap-5 justify-center items-center  border-t-[1px] mt-10 border-[#b5627e] bg-black rounded-t-[20px]">
-          <div className="w-full px-2 md:px-10">
-            <h1 className='xl:text-[4vw] text-3xl font-["Neue_Montreal"] font-bold tracking-tight text-white'>
-              Our Team:
-            </h1>
-            <a href="https://forms.gle/uKMd3XEuauNv2vJDA" target="_blank">
-              <button
-                className='xl:text-[1vw] text-md flex text-s gap-3 items-center px-5 py-2 mt-5 bg-[#CDEA68] rounded-full font-["Neue_Montreal"]
-               text-black transition-all duration-300 hover:text-xl  hover:bg-[#000000] hover:text-white hover:ring hover:ring-[#ffffff] active:bg-[#CDEA68] focus:outline-none focus:text-black active:text-black focus:ring focus:ring-[#ffffff]'
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="grid md:grid-cols-2 gap-8 mb-20"
+        >
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/[0.07] transition-colors duration-300">
+            <div className="w-12 h-12 bg-[#CDEA68]/20 rounded-lg flex items-center justify-center mb-6">
+              <span className="text-2xl">🎯</span>
+            </div>
+            <h3 className='text-2xl font-bold font-["Neue_Montreal"] text-white mb-4'>Our Mission</h3>
+            <p className='text-white/70 font-["Neue_Montreal"] leading-relaxed'>
+              To empower communities through sustainable initiatives that address immediate needs 
+              while building long-term solutions for education, nutrition, and development.
+            </p>
+          </div>
+          
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/[0.07] transition-colors duration-300">
+            <div className="w-12 h-12 bg-[#CDEA68]/20 rounded-lg flex items-center justify-center mb-6">
+              <span className="text-2xl">💝</span>
+            </div>
+            <h3 className='text-2xl font-bold font-["Neue_Montreal"] text-white mb-4'>Support Us</h3>
+            <p className='text-white/70 font-["Neue_Montreal"] leading-relaxed mb-4'>
+              Your donation helps us feed another hungry soul and provide educational resources 
+              to those who need it most. Every contribution makes a difference.
+            </p>
+            <a href="https://forms.gle/uKMd3XEuauNv2vJDA" target="_blank" rel="noopener noreferrer">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className='px-6 py-3 bg-[#CDEA68] text-black text-sm font-semibold rounded-full hover:bg-white transition-colors duration-300 font-["Neue_Montreal"]'
               >
-                Join now
-                <div className="w-2 h-2 rounded-full bg-zinc-100"></div>
-              </button>
+                Donate Now
+              </motion.button>
             </a>
           </div>
-
-          <div className="flex lg:flex-row md:flex-col sm:flex-col flex-col justify-center items-center">
-            <img className="lg:w-[48vw] md:w-full sm:w-full " src="arnab.png" />
-            <img className="lg:w-[48vw] md:w-full sm:w-full " src="sheo.jpg" />
-          </div>
-          <div className="flex lg:flex-row md:flex-col sm:flex-col flex-col justify-center items-center">
-            <img
-              className="lg:w-[48vw] md:w-full sm:w-full "
-              src="shirsho.jpg"
-            />
-            <img className="lg:w-[48vw] md:w-full sm:w-full " src="labib.jpg" />
-          </div>
-          <div className="flex lg:flex-row md:flex-col sm:flex-col flex-col justify-center items-center">
-            <img className="lg:w-[48vw] md:w-full sm:w-full " src="joy.jpg" />
-            <img className="lg:w-[48vw] md:w-full sm:w-full " src="abrar.jpg" />
-          </div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
 }
 

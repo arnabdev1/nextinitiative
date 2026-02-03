@@ -1,58 +1,80 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 
 function Navbar() {
   const scrollToDiv = (targetid) => {
-    // Find the target div using its id
     const targetDiv = document.getElementById(targetid);
-
-    // Scroll to the target div using smooth scrolling behavior
     if (targetDiv) {
       targetDiv.scrollIntoView({ behavior: "smooth" });
     }
   };
 
-  const redirectToWebsite = (website) => {
-    window.open(website, "_blank");
-  };
   return (
-    <div
-      id="top"
-      className='bg-black flex flex-row px-5 container mx-auto  py-8 font-["Neue_Montreal"] justify-evenly items-center'
+    <motion.nav
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className='fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/70 border-b border-white/5'
     >
-      <div className="logo">
-        <img width="200" height="100" fill="none" src="logo3.webp" />
-      </div>
-      <div>
-        <div className=" flex lg:flex-row md:flex-col sm:flex-col flex-col gap-5 flex-wrap items-center">
-          <button
-            onClick={(e) => scrollToDiv("about")}
-            className="transition-all duration-300 p-5 rounded-full text-lg font-light text-white bg-transparent hover:text-xl hover:bg-[#CDEA68] hover:text-black active:bg-[#CDEA68] focus:outline-none focus:text-white active:text-black focus:ring focus:ring-[#ffffff]"
+      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <motion.div 
+          className="flex items-center"
+          whileHover={{ scale: 1.02 }}
+        >
+          <img width="180" height="90" src="logo3.webp" alt="Logo" className="drop-shadow-2xl" />
+        </motion.div>
+        
+        <div className="hidden md:flex items-center gap-8">
+          {/* <button
+            onClick={() => scrollToDiv("about")}
+            className="text-sm font-medium text-white/80 hover:text-[#CDEA68] transition-colors duration-300"
           >
-            About Us
+            About
           </button>
-
           <button
-            onClick={(e) => scrollToDiv("events")}
-            className="transition-all duration-300 p-5 rounded-full text-lg font-light text-white bg-transparent hover:text-xl hover:bg-[#CDEA68] hover:text-black active:bg-[#CDEA68] focus:outline-none focus:text-white active:text-black focus:ring focus:ring-[#ffffff]"
+            onClick={() => scrollToDiv("events")}
+            className="text-sm font-medium text-white/80 hover:text-[#CDEA68] transition-colors duration-300"
           >
-            Our Work
+            Events
           </button>
-
-          <a href="https://forms.gle/uKMd3XEuauNv2vJDA" target="_blank">
-            <button className="transition-all duration-300 p-5 rounded-full text-lg font-light text-white bg-transparent hover:text-xl hover:bg-[#CDEA68] hover:text-black active:bg-[#CDEA68] focus:outline-none focus:text-white active:text-black focus:ring focus:ring-[#ffffff]">
-              Join us
-            </button>
-          </a>
           <button
-            onClick={(e) => scrollToDiv("contact")}
-            className="transition-all duration-300 p-5 rounded-full text-lg font-light text-white bg-transparent hover:bg-[#CDEA68] hover:text-black active:bg-[#CDEA68] focus:outline-none focus:text-white active:text-black focus:ring focus:ring-[#ffffff]"
+            onClick={() => scrollToDiv("team")}
+            className="text-sm font-medium text-white/80 hover:text-[#CDEA68] transition-colors duration-300"
+          >
+            Team
+          </button>
+          <button
+            onClick={() => scrollToDiv("contact")}
+            className="text-sm font-medium text-white/80 hover:text-[#CDEA68] transition-colors duration-300"
           >
             Contact
           </button>
+           */}
+          <div className="flex items-center gap-4 ml-4 border-l border-white/10 pl-4">
+            <a href="https://www.instagram.com/nextinitiative1/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="text-lg text-white/60 hover:text-pink-500 transition-colors duration-300" />
+            </a>
+            <a href="https://www.facebook.com/nextinitiativebd" target="_blank" rel="noopener noreferrer">
+              <FaFacebook className="text-lg text-white/60 hover:text-blue-500 transition-colors duration-300" />
+            </a>
+            <a href="https://www.linkedin.com/company/nextinitiative" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="text-lg text-white/60 hover:text-blue-400 transition-colors duration-300" />
+            </a>
+          </div>
+
+          <a href="https://forms.gle/uKMd3XEuauNv2vJDA" target="_blank" rel="noopener noreferrer">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-6 py-2 bg-[#CDEA68] text-black text-sm font-semibold rounded-full hover:bg-white transition-colors duration-300"
+            >
+              Join Us
+            </motion.button>
+          </a>
         </div>
       </div>
-    </div>
+    </motion.nav>
   );
 }
 

@@ -6,17 +6,13 @@ import About from './components/About'
 import Eyes from './components/Eyes'
 import Events from './components/Events'
 import Partners from './components/Partners'
-
-import LocomotiveScroll from 'locomotive-scroll';
 import Anniv from './components/Anniv'
 import Footer from './components/Footer'
 
 
 function App() {
-  const locomotiveScroll = new LocomotiveScroll();
-
   return (
-    <div className='w-full min-h-screen bg-black text-white'>
+    <div className='w-full min-h-screen bg-gradient-to-b from-black via-zinc-950 to-black text-white overflow-x-hidden'>
       <Navbar/>
       <LandingPage/>
       <About/>
